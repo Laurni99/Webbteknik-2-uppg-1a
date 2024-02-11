@@ -76,12 +76,13 @@ function closeOptionsDialog() {
 function throwDie(id) {
     //Detta är en funktion som simulerar kastet av en tärning genom att generera ett slumpmässigt nummer mellan 1 och 6 och uppdatera tärningsbilden med detta nummer. Sedan returneras det slumpmässigt genererade numret för att användas i spelet.
 
-    let newBtn = document.querySelector("#" + id);
+   let newBtn = document.querySelector("#" + id);
     newBtn.classList.toggle("rotateDie");
     let dieValue = Math.floor(Math.random() * 6) + 1;
-    let imagePath = `dice/${dieValue}.png`; // Dynamiskt byggd sökväg
-    newBtn.src = imagePath;
+    newBtn.src = "/dice/" + dieValue + ".png";
     newBtn.alt = dieValue;
+    console.log(throwDie);
+    return dieValue;;
     
     console.log(throwDie);
     
