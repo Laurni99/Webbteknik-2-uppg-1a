@@ -109,6 +109,13 @@ function newGame(id) {
     DieVal = throwDie("die5");
     sum += DieVal;
 
+    document.querySelector("#die1").src = "1.png";
+    document.querySelector("#die2").src = "2.png";
+    document.querySelector("#die3").src = "3.png";
+    document.querySelector("#die4").src = "4.png";
+    document.querySelector("#die5").src = "5.png";
+
+
     document.querySelector("#rollCounter").innerHTML -= 1;
     document.querySelector("#stopBtn").disabled = false;
     document.querySelector("#newBtn").disabled = false;
