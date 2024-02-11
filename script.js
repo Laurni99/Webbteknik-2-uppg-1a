@@ -138,7 +138,7 @@ function throwOneDie() {
 
 
     let DieVal = parseInt(this.alt);
-    DieVal = throwDie("dice");
+    DieVal = throwDie("this.id");
     sum += DieVal;
     
     
