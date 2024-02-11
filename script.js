@@ -98,7 +98,7 @@ function newGame(id) {
 
     sum = 0;
 
-    let DieVal = throwDie("die1");
+    let DieVal = throwDie("dice");
     sum += DieVal;
     DieVal = throwDie("die2");
     sum += DieVal;
