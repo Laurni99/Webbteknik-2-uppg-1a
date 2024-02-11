@@ -137,16 +137,16 @@ function throwOneDie() {
     }
 
 
-    let DieVal = parseInt(this.alt);
-    DieVal = throwDie(this.id);
-    sum += DieVal;
+    let dieValue = parseInt(this.alt);
+    dieValue = throwDie(this.id);
+    sum += dieValue;
     
     
     document.querySelector("#stopBtn").disabled = false;
     document.querySelector("#result").innerHTML = "Summa: " + sum;
     document.querySelector("#rollCounter").innerHTML -= 1;
 
-    console.log(DieVal)
+    console.log(dieValue)
     console.log(sum)
     console.log(throwOneDie);
 
