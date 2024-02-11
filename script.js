@@ -79,9 +79,12 @@ function throwDie(id) {
     let newBtn = document.querySelector("#" + id);
     newBtn.classList.toggle("rotateDie");
     let dieValue = Math.floor(Math.random() * 6) + 1;
-    newBtn.src = "dice" + dieValue 
+    let imagePath = `dice/${dieValue}.png`; // Dynamiskt byggd sökväg
+    newBtn.src = imagePath;
     newBtn.alt = dieValue;
+    
     console.log(throwDie);
+    
 
     return dieValue;
 
