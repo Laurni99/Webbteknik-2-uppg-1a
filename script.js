@@ -137,9 +137,6 @@ function throwOneDie() {
     document.querySelector("#result").innerHTML = "Summa: " + sum;
     document.querySelector("#rollCounter").innerHTML -= 1;
 
-    let resetGame = newBtn
-    resetGame = sum
-
     console.log(DieVal)
     console.log(sum)
     console.log(throwOneDie);
