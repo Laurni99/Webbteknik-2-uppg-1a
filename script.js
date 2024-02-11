@@ -79,7 +79,7 @@ function throwDie(id) {
     let newBtn = document.querySelector("#" + id);
     newBtn.classList.toggle("rotateDie");
     let dieValue = Math.floor(Math.random() * 6) + 1;
-    newBtn.src = "dice" + dieValue;
+    newBtn.src = "#dice" + dieValue;
     newBtn.alt = dieValue;
     console.log(throwDie);
 
