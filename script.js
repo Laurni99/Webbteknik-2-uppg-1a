@@ -79,7 +79,7 @@ function throwDie(id) {
     let newBtn = document.querySelector("#" + id);
     newBtn.classList.toggle("rotateDie");
     let dieValue = Math.floor(Math.random() * 6) + 1;
-    newBtn.src = "die" + dieValue + ".png";
+    newBtn.src = "dice" + dieValue + "png";
     newBtn.alt = dieValue;
     console.log(throwDie);
 
@@ -98,7 +98,7 @@ function newGame(id) {
 
     sum = 0;
 
-    let DieVal = throwDie("dice");
+    let DieVal = throwDie("die1");
     sum += DieVal;
     DieVal = throwDie("die2");
     sum += DieVal;
